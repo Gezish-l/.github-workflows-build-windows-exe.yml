@@ -1,0 +1,10 @@
+Google Meet Desktop Manager - GitHub Actions EXE build
+
+1. Extract this ZIP.
+2. Create/sign in to a GitHub account and create a NEW repository.
+3. Upload the extracted project contents to the repository, including the hidden .github folder and its workflow file. Make sure .github/workflows/build-windows-exe.yml is at the repository root (not inside GoogleMeetDesktopManager).
+4. Open the repository on GitHub, select Actions, then “Build Windows EXE”.
+5. Click “Run workflow” and confirm. Wait for the workflow to finish successfully.
+6. Open the completed workflow run and download the artifact named GoogleMeetDesktopManager-Windows-EXE. Extract the downloaded artifact ZIP; it contains GoogleMeetDesktopManager-1.0.0.exe.
+
+The workflow builds on a GitHub-hosted Windows runner and bundles a Java runtime into the installer. You do not need to install Java or Maven on your own PC to run the resulting app. The GitHub build itself requires internet access and a GitHub account. The EXE is not included in this source ZIP; it is created by running the workflow.
